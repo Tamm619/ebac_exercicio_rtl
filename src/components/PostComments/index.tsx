@@ -43,16 +43,17 @@ const PostComments = () => {
           onChange={e => setTempComment(e.target.value)}
           required
           className={styles['post-comments-form-textarea']}
-          data-testid="comment-input"
+          data-testid="campo-comentario"
         />
 
-        <button
-          type="submit"
-          className={styles['post-comments-form-button']}
-          data-testid="comment-button"
-        >
-          Comentar
-        </button>
+      <button
+        type="submit"
+        className={styles['post-comments-form-button']}
+        data-testid="botao-comentar"
+      >
+        Comentar
+      </button>
+
       </form>
     </div>
   );
